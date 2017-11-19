@@ -1,0 +1,189 @@
+
+<!-- BEGIN CSS -->
+/**Stylesheet for Contact**/
+
+* {
+	box-sizing: border-box;
+	text-align: center;
+}
+
+/**Background Text for Entire Page**/
+
+.wrapper {
+	width: 100%;
+	height: 1200px;
+	background: url(../Images/fresh_snow_@2X.png);
+
+}
+
+/**Font Style for Body Text**/
+
+body {
+	color: #77777;
+	font-size: 24px
+	line-height: 32px;
+	font-family: 'Arial', Helvtica Neue, Helvetica, sans-serif;
+
+}
+
+/**Header Dimensions and Style*s*/
+
+header {
+	padding: 20px;
+	margin-top: 20px;
+	margin-left: 330px;
+	margin-bottom: 20px;
+	background: #ffffff;
+	width: 1000px;
+	height: 50px;
+    text-align: center;
+	font-family: "Georgia", Times, Times New Roman, serif;
+	border-bottom: thick dotted #ff0000;
+	border-style: solid;
+	border-color: #cccccc;
+	float: left;
+}
+
+
+/**Body Dimensions and Styles**/
+
+h2 {
+	margin-left: 40px;
+	background: #4aaaa5;
+	color: #ffffff;
+	width: 33%;
+	height: 50px;
+	line-height: 55px;
+	float: left;
+}
+
+h3 {
+	margin-left: 20px;
+}
+
+h5 {
+	color: #777777;
+	width: 50%;
+	line-height: 55px;
+	float: left;
+}
+
+.box_wrapper {
+    margin-left: 350px;
+    width: 960px;
+    height: 900px;
+}
+
+/**Contact Box Style**/
+
+.portfolio_box {
+	margin-top: 50px;
+	background: #ffffff;
+	width: 650px;
+	height: 675px;
+	float: left;
+	position: relative;
+	border-style: solid;
+	border-color: #dddddd;
+}
+
+#about {
+	color: #4aaaa5;
+	font-size: 28px;
+	margin-left: 25px;
+	padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+	font-weight: bold;
+	text-align: left;
+}
+
+#namefield {
+	width: 550px
+	padding: 20px;
+	margin: 20px;
+	border: 1px;
+	border-style: solid;
+	border-color: #cccccc;
+	background: url('image/transparent_img.png') repeat top left;
+}
+
+#efield {
+	width: 550px
+	padding: 20px;
+	margin: 20px;
+	border: 1px;
+	border-style: solid;
+	border-color: #cccccc;
+	background: url('image/transparent_img.png') repeat top left;
+
+}
+
+#mfield {
+	padding: 100px;
+	margin: 20px;
+	border: 1px;
+	border-style: solid;
+	border-color: #cccccc;
+	background: url('image/transparent_img.png') repeat top left;
+
+}
+
+#Submit {
+	margin-left: 20px;
+	background: #4aaaa5;
+	color: #ffffff;
+	width: 33%;
+	height: 50px;
+	line-height: 55px;
+	text-align: center;
+}
+ 
+/**Connect Box Style**/
+
+.connect_box { 
+	background-color: #ffffff;
+	margin-left: 20px;
+	margin-top: 50px;
+	width: 270px;
+	height: 150px;
+	padding: 10;
+	float: left;
+	border-style: solid;
+	border-color: #dddddd;
+}
+
+#connect {
+	margin-top: 20px;
+	text-align: center;
+	color: #4aaaa5;
+	font-weight: bold;
+}
+
+
+.favicons {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+/**Footer Style**/
+
+footer {
+	padding: 30px;
+	margin-left: 330px;
+	background: #666666;
+	width: 1000px;
+	height: 50px;
+    text-align: center;
+	font-family: "Georgia", Times, Times New Roman, serif;
+	border-top: solid #4aaaa5;
+}
+
+#copy {
+	color: #ffffff;
+}
+
+background: url('image/transparent_img.png') repeat top left;
+
+<!-- END CSS -->
