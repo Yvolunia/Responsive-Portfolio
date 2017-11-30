@@ -4,16 +4,13 @@
 
 * {
 	box-sizing: border-box;
-	text-align: center;
 }
 
-/**Background Text for Entire Page**/
-
-.wrapper {
-	width: 100%;
-	height: 1200px;
-	background: url(../Images/fresh_snow_@2X.png);
-
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
 }
 
 /**Font Style for Body Text**/
@@ -23,42 +20,60 @@ body {
 	font-size: 24px
 	line-height: 32px;
 	font-family: 'Arial', Helvtica Neue, Helvetica, sans-serif;
-
+	background: url("../images/fresh_snow_@2X.png");
 }
 
 /**Header Dimensions and Style*s*/
 
-header {
-	padding: 20px;
-	margin-top: 20px;
-	margin-left: 330px;
-	margin-bottom: 20px;
-	background: #ffffff;
-	width: 1000px;
-	height: 50px;
-    text-align: center;
-	font-family: "Georgia", Times, Times New Roman, serif;
-	border-bottom: thick dotted #ff0000;
-	border-style: solid;
-	border-color: #cccccc;
-	float: left;
+#masthead {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  margin: 0 0 30px;
+  overflow: auto;
+  color: #fff;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
 }
 
+#logo {
+  float: left;
+  width: 400px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5;
+}
+
+
+nav {
+  float: right;
+  margin-top: 25px;
+  margin-right: 10%;
+}
+
+nav a {
+  display: inline-block;
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color: #999;
+  text-decoration: none;
+  border-left: 1px solid #efefef;
+}
+nav a:first-child {
+  border-left: 0 none;
+}
 
 /**Body Dimensions and Styles**/
 
-h2 {
-	margin-left: 40px;
-	background: #4aaaa5;
-	color: #ffffff;
-	width: 33%;
-	height: 50px;
-	line-height: 55px;
-	float: left;
-}
-
 h3 {
-	margin-left: 20px;
+	margin: 20px;
 }
 
 h5 {
@@ -69,22 +84,20 @@ h5 {
 }
 
 .box_wrapper {
-    margin-left: 350px;
-    width: 960px;
-    height: 900px;
+    padding-top: 130px;
+    margin-left: 20px;
 }
 
 /**Contact Box Style**/
 
 .portfolio_box {
-	margin-top: 50px;
-	background: #ffffff;
-	width: 650px;
-	height: 675px;
 	float: left;
-	position: relative;
-	border-style: solid;
+	background: #ffffff;
+	width: 100%;
+	max-width: 650px;
+	border-style: 1px solid;
 	border-color: #dddddd;
+	margin-bottom: 25px;
 }
 
 #about {
@@ -142,15 +155,15 @@ h5 {
 /**Connect Box Style**/
 
 .connect_box { 
-	background-color: #ffffff;
-	margin-left: 20px;
-	margin-top: 50px;
-	width: 270px;
-	height: 150px;
-	padding: 10;
 	float: left;
-	border-style: solid;
+	width: 100%;
+	max-width: 250px;
+	padding: 30px;
+	background-color: #ffffff;
+	margin-bottom: 20px;
+    border-style: 1px solid;
 	border-color: #dddddd;
+	margin-left: 25px;
 }
 
 #connect {
@@ -170,20 +183,86 @@ h5 {
 /**Footer Style**/
 
 footer {
-	padding: 30px;
-	margin-left: 330px;
+	padding: 30px 0;
+	clear: both;
+	font-size: 12px;
 	background: #666666;
-	width: 1000px;
-	height: 50px;
-    text-align: center;
+	text-align: center;
 	font-family: "Georgia", Times, Times New Roman, serif;
-	border-top: solid #4aaaa5;
+	border-top: 8px solid #4aaaa5;
 }
 
 #copy {
 	color: #ffffff;
 }
 
-background: url('image/transparent_img.png') repeat top left;
+
+@media screen and (max-width: 980px) {
+
+ 	.container {
+ 		padding: 0 20px;
+ 		max-width: 768px;
+ 	}
+
+ 	.box_wrapper {
+ 		padding-top: 130px;
+ 		padding-left: 10px;
+ 	}
+
+ 	.portfolio_box {
+ 		width: 50%;
+ 	}
+
+ 	.connect_box {
+ 		width: 50%;
+ 	}
+  
+    }
+
+ @media screen and (max-width: 768px) {
+
+ 	.portfolio_box {
+ 		width: 100%;
+ 		margin-top: 25px;
+ 	}
+
+ 	.connect_box {
+ 		width: 100%;
+ 	}
+
+ 	.box_wrapper {
+ 		overflow: auto;
+ 	}
+
+ }
+
+ @media screen and (max-width: 640px) {
+  #masthead {
+  	position: static;
+  	margin-bottom: 20px;
+  }
+ 
+   .container {
+   	  padding: 0
+   }
+
+   #logo {
+   	  width: 100%;
+   }
+
+   nav {
+   	  text-align: center;
+   	  width: 100%;
+   	  margin: 15px 0;
+   	  float: left;
+   	}
+
+   	nav a {
+   		width: 30px;
+   		padding-left: 0;
+   		margin-left: 0;
+   	}
+
+   }
 
 <!-- END CSS -->
