@@ -19,7 +19,7 @@ body {
 	font-size: 24px
 	line-height: 32px;
 	font-family: 'Arial', Helvtica Neue, Helvetica, sans-serif;
-	background: url("../Images/fresh_snow_@2X.png");
+	background: url(../Images/fresh_snow_@2X.png);
 }
 
 /**Header Dimensions and Style*s*/
@@ -94,6 +94,7 @@ h5 {
 	background: #ffffff;
 	width: 100%;
 	max-width: 650px;
+	padding: 30px;
 	border-style: 1px solid;
 	border-color: #dddddd;
 	margin-bottom: 125px;
