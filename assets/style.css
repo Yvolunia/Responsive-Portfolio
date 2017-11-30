@@ -3,54 +3,69 @@
 
 * {
 	box-sizing: border-box;
-	text-align: center;
-}
-
-/**Background Text for Entire Page**/
-
-.wrapper {
-	width: 100%;
-	height: 1200px;
-	background: url(../Images/fresh_snow_@2X.png);
 }
 
 /**Font Style for Body Text**/
 
 body {
+	color: #77777;
 	font-size: 24px
 	line-height: 32px;
 	font-family: 'Arial', Helvtica Neue, Helvetica, sans-serif;
-
-}
+    background: url(../Images/fresh_snow_@2X.png);
+    }
 
 /**Header Dimensions and Style**/
 
-header {
-	padding: 20px;
-	margin-top: 20px;
-	margin-left: 330px;
-	margin-bottom: 20px;
-	background: #ffffff;
-	width: 1000px;
-	height: 50px;
-    text-align: center;
-	font-family: "Georgia", Times, Times New Roman, serif;
-	border-bottom: thick dotted #ff0000;
-	border-style: solid;
-	border-color: #cccccc;
-	float: left;
+#masthead {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  margin: 0 0 30px;
+  overflow: auto;
+  color: #fff;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
 }
 
-/**Body Dimensions and Style**/
+#logo {
+  float: left;
+  width: 400px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5;
+}
 
-h2 {
-	margin-left: 40px;
-	background: #4aaaa5;
-	color: #ffffff;
-	width: 33%;
-	height: 50px;
-	line-height: 55px;
-	float: left;
+
+nav {
+  float: right;
+  margin-top: 25px;
+  margin-right: 10%;
+}
+
+nav a {
+  display: inline-block;
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color: #999;
+  text-decoration: none;
+  border-left: 1px solid #efefef;
+}
+nav a:first-child {
+  border-left: 0 none;
+}
+
+/**Body Dimensions and Styles**/
+
+h3 {
+	margin: 20px;
 }
 
 h5 {
@@ -61,22 +76,21 @@ h5 {
 }
 
 .box_wrapper {
-    margin-left: 350px;
-    width: 960px;
-    height: 900px;
+    padding-top: 130px;
+    margin-left: 20px;
 }
-
 
 /**Portfolio Box Style**/
 
 .portfolio_box {
-	background: #ffffff;
-	width: 650px;
-	height: 900px;
-	border-style: solid;
-	border-color: #dddddd;
 	float: left;
+	background: #ffffff;
+	width: 100%;
+	max-width: 650px;
+	border-style: 1px solid;
+	border-color: #dddddd;
 	position: relative;
+	margin-bottom: 30px
 }
 
 #portfolio {
@@ -191,15 +205,14 @@ h5 {
 /**Connect Box Style**/
 
 .connect_box { 
-	background-color: #ffffff;
-	margin-left: 20px;
-	margin-top: 10px;
-	width: 270px;
-	height: 150px;
-	border-style: solid;
-	border-color: #dddddd;
-	padding: 10;
 	float: left;
+	width: 100%;
+	max-width: 250px;
+	background-color: #ffffff;
+	margin-bottom: 20px
+	border-style: 1px solid;
+	border-color: #dddddd;
+	margin-left: 25px;
 }
 
 #connect {
@@ -214,6 +227,117 @@ h5 {
 	text-align: center;
 	margin-top: 20px;
 	margin-bottom: 10px;
+}
+
+/**Footer Style**/
+
+footer {
+	padding: 30px 0;
+	clear: both;
+	font-size: 12px;
+	background: #666666;
+	text-align: center;
+	font-family: "Georgia", Times, Times New Roman, serif;
+	border-top: 8px solid #4aaaa5;
+}
+
+#copy {
+	color: #ffffff;
+}
+
+
+@media screen and (max-width: 980px) {
+
+ 	.container {
+ 		padding: 0 20px;
+ 		max-width: 768px;
+ 	}
+
+ 	.box_wrapper {
+ 		padding-top: 130px;
+ 		padding-left: 10px;
+ 	}
+
+ 	.portfolio_box {
+ 		width: 50%;
+ 	}
+
+ 	.connect_box {
+ 		width: 50%;
+ 	}
+
+ 	#portfolio {
+ 		width: 100%;
+ 	}
+  
+  #angels_image, #patrol_image, #rapport_image, #boards-image,
+  #reason_image {
+  	width: 100%;
+}
+    }
+
+ @media screen and (max-width: 768px) {
+
+ 	.portfolio_box, .connect_box {
+ 		width: 100%;
+ 	}
+
+ 	.portfolio_box {
+ 		margin-top: 20px;
+ 	}
+
+
+ 	.box_wrapper {
+ 		overflow: auto;
+ 	}
+
+   .connect_box {
+	margin: 40px;
+  }
+
+  #angels_image, #patrol_image, #rapport_image, #boards-image,
+  #reason_image {
+  	width: 33%; 
+
+ }
+
+ @media screen and (max-width: 640px) {
+
+  #masthead {
+  	position: static;
+  	margin-bottom: 20px;
+  }
+ 
+   .container {
+   	  padding: 0
+   }
+
+   #logo {
+   	  width: 100%;
+   }
+
+   nav {
+   	  text-align: center;
+   	  width: 100%;
+   	  margin: 15px 0;
+   	  float: left;
+   	}
+
+   	nav a {
+   		width: 30px;
+   		padding-left: 0;
+   		margin-left: 0;
+   	}
+
+  #angels_image, #patrol_image, #rapport_image, #boards-image,
+  #reason_image {
+  	width: 100%;
+  }
+
+  	.portfolio_box {
+  		margin-right: 30px;
+  	}
+
 }
 
 <!-- END CSS -->

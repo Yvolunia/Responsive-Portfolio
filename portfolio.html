@@ -3,33 +3,31 @@
 <!doctype html>
 <html lang="en-us">
  
-<link rel="stylesheet" type="text/css" href="./assets/reset.css">
-<link rel="stylesheet" type="text/css" href="./assets/style.css">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+   <link rel="stylesheet" type="text/css" 
+   href="./assets/reset.css">
+   <link rel="stylesheet" type="text/css" href="./assets/style.css">
+ 
 </head>
 
 <body>
 
-  <div class="clearfix"></div>
-
   <!-- Header -->
 
-    <!--Body Wrapper -->
-  <div class="wrapper">
-
-    <Header>
-
-      <h2>Yvonne Reichenbach</h2>  
-
-
-      <h5>
-        <a href="index.html" style="text-decoration: none">About</a>&nbsp; &nbsp; Portfolio &nbsp; &nbsp; <a href="contact.html" style="text-decoration: none">Contact</a>
-      </h5>   
-     
-    </Header>
+  <header id="masthead">
+      <div class="container">
+        <a href="index.html" id="logo">Yvonne Reichenbach</a>
+        <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        </nav> 
+      </div>     
+    </header>
 
       <!--Box Wrapper -->
       <div class="box_wrapper">
@@ -41,8 +39,6 @@
         <div id="portfolio">
           Portfolio
         </div>
-
-        <hr width="600" type="2">
 
         <div id="angels_image"> 
           <img width=200 height=200 src="./Images/BA_StockSnap_771E26E5E8.jpg">
@@ -108,12 +104,12 @@
      
  </div><!-- end .box_wrapper -->
 
-
-     <hr type="6" width="1000" align="center">
+ <footer>
+  <div id="copy"> © Copyright 2017 Yvonne Reichenbach</div>
+ </footer>
   
 </body>
 
-</div><!-- end .wrapper -->
 
 
 </html>
