@@ -8,7 +8,6 @@
 
 .container {
   width: 100%;
-  max-width: 960px;
   margin: 0 auto;
   clear: both;
 }
@@ -20,7 +19,7 @@ body {
 	font-size: 24px
 	line-height: 32px;
 	font-family: 'Arial', Helvtica Neue, Helvetica, sans-serif;
-	background: url("../images/fresh_snow_@2X.png");
+	background: url("../Images/fresh_snow_@2X.png");
 }
 
 /**Header Dimensions and Style*s*/
@@ -97,7 +96,7 @@ h5 {
 	max-width: 650px;
 	border-style: 1px solid;
 	border-color: #dddddd;
-	margin-bottom: 25px;
+	margin-bottom: 125px;
 }
 
 #about {
